@@ -559,6 +559,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 33648621}
   m_CullTransparentMesh: 1
+--- !u!1 &36151200
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 36151201}
+  m_Layer: 0
+  m_Name: WaitingSpot
+  m_TagString: buyingPoint
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &36151201
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 36151200}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.26, y: 3.3899999, z: -8.71}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 28
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &40313001
 GameObject:
   m_ObjectHideFlags: 0
@@ -642,7 +672,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1118440807}
+      - m_Target: {fileID: 1856622161}
         m_TargetAssemblyTypeName: RefillOptions, Assembly-CSharp
         m_MethodName: refill
         m_Mode: 3
@@ -4261,6 +4291,88 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3743832947692670511, guid: f3ccfa9003e9e7e4799853e37266bcd3, type: 3}
   m_PrefabInstance: {fileID: 24245491}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &55887406
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 55887410}
+  - component: {fileID: 55887409}
+  - component: {fileID: 55887408}
+  m_Layer: 0
+  m_Name: SpawnerAi
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!33 &55887408
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 55887406}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &55887409
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 55887406}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 257
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 6774a45320d346f499fe58027a9eb304, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!4 &55887410
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 55887406}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.229, y: 3.446, z: -8.763}
+  m_LocalScale: {x: 1, y: 0.045661, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 27
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &57951176
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6316,7 +6428,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1118440807}
+      - m_Target: {fileID: 1856622161}
         m_TargetAssemblyTypeName: RefillOptions, Assembly-CSharp
         m_MethodName: refill
         m_Mode: 3
@@ -9710,7 +9822,7 @@ MonoBehaviour:
   vegetables: 10
   meat: 6
   jewerly: 3
-  UIRefillManager: {fileID: 1118440805}
+  UIRefillManager: {fileID: 1856622159}
   audioManager_: {fileID: 819776943}
   buyerPreab: {fileID: 7321776942490721005, guid: 9637dcd8bef0c3c44a7a8356e83ab22a, type: 3}
   interactionDistance: 3
@@ -10610,7 +10722,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1118440807}
+      - m_Target: {fileID: 1856622161}
         m_TargetAssemblyTypeName: RefillOptions, Assembly-CSharp
         m_MethodName: refill
         m_Mode: 3
@@ -10742,7 +10854,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 537493782}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.26, y: 3.3899999, z: -8.71}
+  m_LocalPosition: {x: 1.26, y: 3.3899999, z: -8.71}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -14301,6 +14413,36 @@ MonoBehaviour:
   m_Spacing: {x: 0, y: 0}
   m_Constraint: 0
   m_ConstraintCount: 2
+--- !u!1 &885938493
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 885938494}
+  m_Layer: 0
+  m_Name: WaitingSpot (1)
+  m_TagString: buyingPoint
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &885938494
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 885938493}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.99, y: 3.3899999, z: -8.71}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 29
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &887111050
 GameObject:
   m_ObjectHideFlags: 0
@@ -16353,7 +16495,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1118440807}
+      - m_Target: {fileID: 1856622161}
         m_TargetAssemblyTypeName: RefillOptions, Assembly-CSharp
         m_MethodName: refill
         m_Mode: 3
@@ -17423,84 +17565,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4978237809994836447, guid: 9de8f72705f1fbc40a81b97c6fcf9111, type: 3}
   m_PrefabInstance: {fileID: 1747840385}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1118440805
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1118440806}
-  - component: {fileID: 1118440807}
-  m_Layer: 5
-  m_Name: UIManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1118440806
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1118440805}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 18
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 960, y: 540}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1118440807
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1118440805}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbc087267cbc5fa4babff75fcad94d03, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  refillAmount: 0
-  refillOptionPanel: {fileID: 218589158}
-  playerPotionsAmount: 10
-  playerVegetables: 0
-  playerMeat: 0
-  playerJewerly: 2
-  potions:
-  - {fileID: 5743614004915059621, guid: 0585949838ecb694686123eb29fe7d7e, type: 3}
-  - {fileID: 3884886592937367048, guid: 4f2332bd63200b448a1c51da6495ad03, type: 3}
-  vegetables:
-  - {fileID: 512641085064564861, guid: d5b2539077e33d84db76d562ef01a255, type: 3}
-  - {fileID: 7556398338268316070, guid: 30782a5e0a21a804c84ab2e645c1683b, type: 3}
-  - {fileID: 8013071688901503743, guid: 4eac3c037b300794d95d5945560a7e8a, type: 3}
-  - {fileID: 4823376319862243859, guid: 7dcb878ee0f4bce458f260d3836e06e8, type: 3}
-  meat:
-  - {fileID: 4972252365028309946, guid: 6181c14f8483e8a41a5fbf18ffc8cdef, type: 3}
-  - {fileID: 7672809659029337486, guid: b6fff7167d2516b44bebacebdea07f5f, type: 3}
-  - {fileID: 4196166157257081733, guid: b24c9bb6bd1ee7d449a3003cfab461a0, type: 3}
-  - {fileID: 1166284599572305854, guid: d6648f2bda674084d96561052a08e5a8, type: 3}
-  - {fileID: 8016462458392332251, guid: 5c24b87398ed39d4487897cb7c276c62, type: 3}
-  jewerly:
-  - {fileID: 5852397196684977538, guid: 8ef9eaada94540147920d50d0dbf6f3b, type: 3}
-  - {fileID: 795989768403397827, guid: e8caeccfcab9c4d4a836cb0569731800, type: 3}
-  - {fileID: 7931464393687522271, guid: 89ead8e618376e04e90b57d958035657, type: 3}
-  - {fileID: 3431649408107984953, guid: fc88056807ae71b40aaa265bc6752b26, type: 3}
-  itemAmountTxt:
-  - {fileID: 403724769}
-  - {fileID: 362154158}
-  - {fileID: 1886930794}
-  - {fileID: 1041108756}
 --- !u!1 &1118585559
 GameObject:
   m_ObjectHideFlags: 0
@@ -19081,7 +19145,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6870338127900561232, guid: fca18383c9624c44e868cd5c6112a0d1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.9775739
+      value: 2.7275739
       objectReference: {fileID: 0}
     - target: {fileID: 6870338127900561232, guid: fca18383c9624c44e868cd5c6112a0d1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -35033,6 +35097,97 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1855344994}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1856622159
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1856622162}
+  - component: {fileID: 1856622161}
+  - component: {fileID: 1856622160}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1856622160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1856622159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bcc9b63f4e272a42957eaf0c7866b68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  aIPrefab: {fileID: 7321776942490721005, guid: 9637dcd8bef0c3c44a7a8356e83ab22a, type: 3}
+  spawnPoint: {fileID: 55887410}
+  spawnRate: 0
+  maxCostumersAmount: 2
+  costumers: []
+--- !u!114 &1856622161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1856622159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbc087267cbc5fa4babff75fcad94d03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  refillAmount: 0
+  refillOptionPanel: {fileID: 218589158}
+  playerPotionsAmount: 10
+  playerVegetables: 0
+  playerMeat: 0
+  playerJewerly: 2
+  potions:
+  - {fileID: 5743614004915059621, guid: 0585949838ecb694686123eb29fe7d7e, type: 3}
+  - {fileID: 3884886592937367048, guid: 4f2332bd63200b448a1c51da6495ad03, type: 3}
+  vegetables:
+  - {fileID: 512641085064564861, guid: d5b2539077e33d84db76d562ef01a255, type: 3}
+  - {fileID: 7556398338268316070, guid: 30782a5e0a21a804c84ab2e645c1683b, type: 3}
+  - {fileID: 8013071688901503743, guid: 4eac3c037b300794d95d5945560a7e8a, type: 3}
+  - {fileID: 4823376319862243859, guid: 7dcb878ee0f4bce458f260d3836e06e8, type: 3}
+  meat:
+  - {fileID: 4972252365028309946, guid: 6181c14f8483e8a41a5fbf18ffc8cdef, type: 3}
+  - {fileID: 7672809659029337486, guid: b6fff7167d2516b44bebacebdea07f5f, type: 3}
+  - {fileID: 4196166157257081733, guid: b24c9bb6bd1ee7d449a3003cfab461a0, type: 3}
+  - {fileID: 1166284599572305854, guid: d6648f2bda674084d96561052a08e5a8, type: 3}
+  - {fileID: 8016462458392332251, guid: 5c24b87398ed39d4487897cb7c276c62, type: 3}
+  jewerly:
+  - {fileID: 5852397196684977538, guid: 8ef9eaada94540147920d50d0dbf6f3b, type: 3}
+  - {fileID: 795989768403397827, guid: e8caeccfcab9c4d4a836cb0569731800, type: 3}
+  - {fileID: 7931464393687522271, guid: 89ead8e618376e04e90b57d958035657, type: 3}
+  - {fileID: 3431649408107984953, guid: fc88056807ae71b40aaa265bc6752b26, type: 3}
+  itemAmountTxt:
+  - {fileID: 403724769}
+  - {fileID: 362154158}
+  - {fileID: 1886930794}
+  - {fileID: 1041108756}
+--- !u!4 &1856622162
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1856622159}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -15.440584, y: -3.4909215, z: -16.648203}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1857748674
 GameObject:
   m_ObjectHideFlags: 0

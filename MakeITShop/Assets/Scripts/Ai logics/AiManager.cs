@@ -8,7 +8,7 @@ public class AiManager : MonoBehaviour
 {
 
     public AiUnit aiUnit = new AiUnit();
-
+    AiSpawner aiSpawner;
 
 
     [Header("Ai Unit")]
@@ -30,6 +30,7 @@ public class AiManager : MonoBehaviour
    
     public GameObject currentBuyingStation;
     public List<GameObject> npcStandingPoints = new List<GameObject>();
+    public List<GameObject> npcWaitingPoints = new List<GameObject>();
     public Transform buingPoint;
     public Transform entrencePoint;
     public Collider buyingArea;
@@ -67,7 +68,14 @@ public class AiManager : MonoBehaviour
         buyingArea = GameObject.Find("TradingArea").GetComponent<Collider>();
         npcStandingPoints.AddRange(GameObject.FindGameObjectsWithTag("standingPoint"));
         buingPoint = GameObject.FindGameObjectWithTag("buyingPoint").transform;
+
+        
         entrencePoint = GameObject.FindGameObjectWithTag("entrancePoint").transform;
+        aiSpawner = GameObject.FindObjectOfType<AiSpawner>();
+        
+       
+
+
         transform.position = entrencePoint.position;
 
         currentState = aiWalkingState;
@@ -191,6 +199,7 @@ public class AiManager : MonoBehaviour
     }
     public void destory()
     {
+        aiSpawner.costumers.Remove(this.gameObject);
         Destroy(gameObject);
     }
 }
