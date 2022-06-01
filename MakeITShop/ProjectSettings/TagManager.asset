@@ -13,6 +13,7 @@ TagManager:
   - AudioManager
   - FarmPlot
   - Crop
+  - WaitingPoint
   layers:
   - Default
   - TransparentFX

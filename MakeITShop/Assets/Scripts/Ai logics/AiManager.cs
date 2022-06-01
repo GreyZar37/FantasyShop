@@ -62,18 +62,25 @@ public class AiManager : MonoBehaviour
         print(aiUnit.maxMoney);
         print(aiUnit.race);
 
+
+        npcWaitingPoints.AddRange(GameObject.FindGameObjectsWithTag("WaitingPoint"));
+        npcWaitingPoints.Add(GameObject.FindGameObjectWithTag("buyingPoint"));
+
+
         navMeshAgent = GetComponent<NavMeshAgent>();
         audioManager_ = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<audioManager>();
 
         buyingArea = GameObject.Find("TradingArea").GetComponent<Collider>();
         npcStandingPoints.AddRange(GameObject.FindGameObjectsWithTag("standingPoint"));
         buingPoint = GameObject.FindGameObjectWithTag("buyingPoint").transform;
-
+        
         
         entrencePoint = GameObject.FindGameObjectWithTag("entrancePoint").transform;
         aiSpawner = GameObject.FindObjectOfType<AiSpawner>();
-        
-       
+
+    
+
+
 
 
         transform.position = entrencePoint.position;
