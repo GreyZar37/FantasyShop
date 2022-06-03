@@ -165,13 +165,11 @@ public class AiManager : MonoBehaviour
         {
 
             switchState(new AiLeaving());
-            Debug.Log("Leaving Buying State");
 
         }
         else if (aiUnit.itemsHeld == aiUnit.maxItemsToHold || npcStandingPoints.Count <= 0)
         {
             switchState(new AiBuying());
-            Debug.Log(" Buying State");
 
         }
         else
